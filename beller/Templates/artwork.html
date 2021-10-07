@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+<html>
+	<body>
+		<br/>
+		<br/>
+		<div class="d-flex flex-wrap justify-content-center">
+			{% for i in data %}
+				<div class="p-5 m-5" onclick="location.href='artwork/view/{{i.id}}';">
+					<div class="image">
+						<img src="/static/images/easle.png">
+						<img class="centered" src="media/{{i.picture}}">
+						<div class="overlay overlay--primary">
+							<div class="price">${{i.price}}</div>
+							<p class="size">{{i.size}}</p>
+						</div>
+					</div>
+				</div>
+			{% endfor %}
+		</div>
+	</body>
+</html>
+
+{% endblock %}

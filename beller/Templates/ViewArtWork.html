@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/ViewArtWork.css' %}">
+<div class="container">
+	<div class="flex row align-items-center">
+		<div class="col">
+			<img class="image" style="height:700px; width:auto; top:150px" src="\media/{{picture}}">
+		</div>
+
+		<div class="col">
+			<img align="left" class="p-3" src="https://see.fontimg.com/api/renderfont4/Yzv2O/eyJyIjoiZnMiLCJoIjo3NiwidyI6MTAwMCwiZnMiOjc2LCJmZ2MiOiIjMDAwMDAwIiwiYmdjIjoiI0ZGRkZGRiIsInQiOjF9/QmVsbGEgU2hlbGxleSA/magilio-regular.png" alt="Modern fonts"></a>
+
+			<p class="viewprice p-3" ><img align="left" src="https://see.fontimg.com/api/renderfont4/Yzv2O/eyJyIjoiZnMiLCJoIjo0MCwidyI6MTAwMCwiZnMiOjQwLCJmZ2MiOiIjMDAwMDAwIiwiYmdjIjoiI0ZGRkZGRiIsInQiOjF9/UHJpY2U/magilio-regular.png" alt="Modern fonts">: ${{price}}</p>
+			<p class="viewsize p-3"><img align="left" src="https://see.fontimg.com/api/renderfont4/Yzv2O/eyJyIjoiZnMiLCJoIjo0MCwidyI6MTAwMCwiZnMiOjQwLCJmZ2MiOiIjMDAwMDAwIiwiYmdjIjoiI0ZGRkZGRiIsInQiOjF9/RGltZW5zaW9ucw/magilio-regular.png" alt="Modern fonts">: {{size}}</p>
+		</div>
+	</div>
+</div>
+
+
+
+{% endblock %}
