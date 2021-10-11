@@ -11,8 +11,14 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+@font-face { 
+  font-family: CuteNotes; 
+  src: url('CuteNotes-EL7r.ttf'); 
+} 
+
+
 .navMenu {
-  position: absolute;
+  position: relative;
   text-align: center;
   top: 5%;
   left: 50%;
@@ -23,11 +29,13 @@ body {
 .navMenu a {
   color: #f6f4e6;
   text-decoration: none;
-  font-size: 1.2em;
+  font-size: 2em;
+  font-family: CuteNotes;
   text-transform: uppercase;
   font-weight: 500;
   display: inline-block;
-  width: 120px;
+  padding-left: 20px;
+  padding-right: 20px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
@@ -36,41 +44,6 @@ body {
   color: #FFC0CB;
 }
 
-.navMenu .dot {
-  width: 6px;
-  height: 6px;
-  background: #FFC0CB;
-  border-radius: 50%;
-  opacity: 0;
-  -webkit-transform: translateX(30px);
-  transform: translateX(30px);
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-}
-
-.navMenu a:nth-child(1):hover ~ .dot {
-  -webkit-transform: translateX(60px);
-  transform: translateX(60px);
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  opacity: 1;
-}
-
-.navMenu a:nth-child(2):hover ~ .dot {
-  -webkit-transform: translateX(185px);
-  transform: translateX(185px);
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  opacity: 1;
-}
-
-.navMenu a:nth-child(3):hover ~ .dot {
-  -webkit-transform: translateX(310px);
-  transform: translateX(310px);
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  opacity: 1;
-}
 
 
 

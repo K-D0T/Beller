@@ -1,10 +1,25 @@
-.viewprice {
-	display: inline-block;
-	font-size: 2em;
+.row {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 100%;
+  }
+
+
+.column {
+	display: flex;
+	flex-direction: column;
+	flex-basis: 100%;
+	flex: 1;
 }
 
-.viewsize {
-	display: inline-block;
-	font-size: 2em;
+@font-face { 
+	font-family: WTTWmessy; 
+	src: url('Wttwmessy-M2Kn.ttf'); 
+} 
 
-}
+
+@font-face { 
+	font-family: CuteNotes; 
+	src: url('CuteNotes-EL7r.ttf'); 
+} 
