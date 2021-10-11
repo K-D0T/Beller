@@ -1,5 +1,3 @@
-
-
 .row {
 	display: flex;
 	flex-direction: row;
@@ -13,21 +11,15 @@
 	flex-direction: column;
 	flex-basis: 100%;
 	flex: 1;
-
 }
 
 @font-face { 
 	font-family: WTTWmessy; 
 	src: url('Wttwmessy-M2Kn.ttf'); 
-
 } 
 
 
-.column1 {
-	height: 100px;
-}
-
-.column2 {
-	height: 100px;
-	padding-top: 25%;
-}
+@font-face { 
+	font-family: CuteNotes; 
+	src: url('CuteNotes-EL7r.ttf'); 
+} 
