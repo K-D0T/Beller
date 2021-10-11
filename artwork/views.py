@@ -17,4 +17,5 @@ def ViewArtWork(request, id):
 	picture = data[0]['picture']
 	price = data[0]['price']
 	size = data[0]['size']
-	return render(request, 'ViewArtWork.html', {'picture':picture, 'price':price, 'size':size})
+	about = data[0]['about']
+	return render(request, 'ViewArtWork.html', {'picture':picture, 'price':price, 'size':size, 'about':about})

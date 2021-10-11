@@ -1,10 +1,33 @@
-.viewprice {
-	display: inline-block;
-	font-size: 2em;
+
+
+.row {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 100%;
+  }
+
+
+.column {
+	display: flex;
+	flex-direction: column;
+	flex-basis: 100%;
+	flex: 1;
+
 }
 
-.viewsize {
-	display: inline-block;
-	font-size: 2em;
+@font-face { 
+	font-family: WTTWmessy; 
+	src: url('Wttwmessy-M2Kn.ttf'); 
 
+} 
+
+
+.column1 {
+	height: 100px;
+}
+
+.column2 {
+	height: 100px;
+	padding-top: 25%;
 }
